@@ -1,0 +1,14 @@
+.modal.fade.signupModal
+  .modal-header
+    a.close(data-dismiss="modal") ×
+    h3 Signup
+  .modal-body
+    form.form-inline
+      .controls
+        input(type="text", class="span3", placeholder="username", name="username")
+      .controls
+        input(type="email", class="span3", placeholder="email", name="email")
+      .controls
+        .input-append
+          input(type="password", class="span2", placeholder="password", name="password")
+          button.btn.btn-primary(type="submit") Signup

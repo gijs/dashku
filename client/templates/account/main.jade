@@ -1,0 +1,20 @@
+.account
+  .row.spiel
+    .span12
+      h1 Your account
+    .span6
+      h2 Details
+      p
+        b Username: 
+        span {{username}}
+      p 
+        b Email: 
+        span {{email}} &nbsp;
+        a(href='#', id="changeEmail") Change
+      p
+       a(href='#', id="changePassword") Change password
+       
+      h2.cancel Cancel Account
+      p We delete your data from our service. 
+      p
+        a.btn.btn-danger#cancelAccount Cancel Account

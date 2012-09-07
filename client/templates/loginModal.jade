@@ -1,0 +1,15 @@
+.modal.fade#loginModal
+  .modal-header
+    a.close(data-dismiss="modal") ×
+    h3 Login
+  .modal-body
+    form.form-inline
+      fieldset
+        .controls
+          input(type="text", class="span3", placeholder="username or email", name="identifier")
+        .controls
+          .input-append
+            input(type="password", class="span2", placeholder="password", name="password", size="16")
+            button.btn.btn-primary(type="submit") Login
+        .controls.forgotPassword.hidden
+          a(href="#") Forgot Password?

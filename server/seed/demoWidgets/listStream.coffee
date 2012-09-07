@@ -1,0 +1,9 @@
+module.exports =
+  css:          "ul {\n  list-style-type: none;\n  margin-left: 0px;\n  margin-top: 10px;\n}\n\nli {\n  padding: 5px;\n  background: rgba(255,255,255,0.03);\n  margin: 5px;\n  border-radius: 5px;\n  color:#f1f1f1;\n  cursor: pointer;\n}\n\n* content ul {\n overflow: clip; \n}"
+  height:       608
+  html:         "<ul id=\"tweets\">\n  <li></li>\n</ul>"
+  json:         "{\n  \"text\": \"I just finished a 8.02 mi run with Nike+ Running. #nikeplus\",\n  \"location\": {\n    \"latitude\": \"51\",\n    \"longitude\": \"0\"\n  },\n  \"sentiment\": 1,\n  \"tweet_id\": \"24324324234\",\n  \"screen_name\": \"jeese\",\n  \"_id\": \"4fe772d77c249dc40e0004d7\",\n  \"apiKey\": \"c19cabb2-85d6-4be0-b1d6-d85a19b8245e\"\n}"  
+  name:         "on Twitter"
+  script:       "// You can use 3rd-party libraries with your widget. For more information, \n// check out the Docs section titled 'Using 3rd-party JS libraries'.\n\n// The widget's html as a jQuery object\nvar widget = this.widget;\n\n// This runs when the widget is loaded\nthis.on('load', function(data){\n  tweet = jQuery(widget.find('li')[0]).clone()\n});\n// This runs when the widget receives a transmission\nthis.on('transmission', function(data){\n  console.log(data);\n  var t = tweet.clone()\n  var url = 'http://twitter.com/'+data.screen_name+'/status/'+data.tweet_id\n  jQuery(t).text(data.text).attr('url', url)\n  jQuery(t).click(function(){\n    window.open(jQuery(this).attr('url'),'_blank')\n  });\n  widget.find(\"ul\").prepend((t).hide().fadeIn());\n  if (widget.find('li').length > 8) {\n    widget.find(\"li:last\").remove();  \n  }\n  \n});\n\nvar ee = this;\nthis.on('stream_STREAM_ID', function(data){\n  ee.emit('transmission', data);\n});"
+  scriptType:   "javascript"
+  width:        200

@@ -1,0 +1,35 @@
+.modal.fade#scriptModal
+  .modal-header
+    a.close(data-dismiss="modal") ×
+    h3 Download Server Script
+  .modal-body
+    .span6
+      p Download a script to transmit the data to the widget 
+      ul#files
+        li.nodejs
+          a(href="/api/dashboards/{{dashboardId}}/widgets/{{_id}}/downloads/dashku_{{_id}}.js", target="_blank")#download
+            .imgContainer
+              img(src="/images/nodejslogo.png")
+            .name Node.js
+        li.nodejs
+          a(href="/api/dashboards/{{dashboardId}}/widgets/{{_id}}/downloads/dashku_{{_id}}.coffee", target="_blank")#download 
+            .imgContainer
+              img(src="/images/nodejslogo.png")
+            .name Node.js (CoffeeScript)
+        li.ruby
+          a(href="/api/dashboards/{{dashboardId}}/widgets/{{_id}}/downloads/dashku_{{_id}}.rb", target="_blank")#download 
+            .imgContainer
+              img(src="/images/ruby-lg.png")
+            .name Ruby
+        li.php
+          a(href="/api/dashboards/{{dashboardId}}/widgets/{{_id}}/downloads/dashku_{{_id}}.php", target="_blank")#download 
+            .imgContainer
+              img(src="/images/php-med-trans.png")
+            .name PHP
+        li.python
+          a(href="/api/dashboards/{{dashboardId}}/widgets/{{_id}}/downloads/dashku_{{_id}}.py", target="_blank")#download 
+            .imgContainer
+              img(src="/images/python-logo.png")
+            .name Python
+        li.email
+          a(href="mailto:admin@dashku.com") Want another script library here? Send an email to admin @ dashku.com

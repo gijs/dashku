@@ -1,0 +1,15 @@
+#editor2
+  .header 
+    span Build Widget
+    a.close(href="#", title="When you close the widget editor, the changes you've made to the code are saved to the widget.") &times;
+  .content
+    ul#tabs
+      li.tab#html HTML
+      li.tab#css CSS
+      li.tab#script(title="Click this tab again to switch between CoffeeScript and JavaScript") {{scriptType}}
+      li.tab#json Example JSON
+    ul#actions
+      li.action#load(title="Test the load function in your script")
+      li.action#transmit(title="Test the transmit function in your script, the example JSON acts as the data received by the function")
+      li.action#download(title="Download a server script to transmit JSON data to your widget")
+    #editContainer

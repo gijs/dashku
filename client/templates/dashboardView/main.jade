@@ -1,0 +1,10 @@
+style#dashboardStyle {{{css}}}
+.dashboardView
+  .row.spiel.switch-width
+    .span12.center
+      h1.name {{name}}
+  .row.switch-width
+    .span12#widgets
+      {{#widgets}}
+      {{> widget}}
+      {{/widgets}}

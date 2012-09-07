@@ -1,0 +1,19 @@
+.nav-collapse.dashboard
+  ul.nav
+    li.dropdown
+      a.dropdown-toggle(data-toggle="dropdown",href="#") 
+        span Dashboards
+        b.caret
+      ul.dropdown-menu#dashboardMenuItems
+        {{#dashboards}}        
+        {{> dashboardMenuItem}}
+        {{/dashboards}}
+        li.divider
+        li
+          a#newDashboard(href="#")
+            i.icon-white.icon-plus
+            span New Dashboard  
+    li
+      a#newWidget(href="#")
+        i.icon-white.icon-plus
+        span New Widget

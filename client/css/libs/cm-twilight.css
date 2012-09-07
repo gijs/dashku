@@ -1,0 +1,46 @@
+/*
+http://lesscss.org/ dark theme
+Ported to CodeMirror by Peter Kroon
+*/
+.CodeMirror{
+  line-height: 15px;
+}
+.cm-s-twilight {
+  font-family: 'Menlo', 'Monaco', Courier, monospace !important;
+  font-size:9pt;
+  line-height: 1.3em;
+}
+
+.cm-s-twilight { background: none; color: #F8F8F8; text-shadow: 0 -1px 1px #262626; }
+.cm-s-twilight div.CodeMirror-selected {background: #303030 !important;} /* 33322B*/
+.cm-s-twilight .CodeMirror-cursor { border-left: 1px solid white !important; }
+.cm-s-twilight .CodeMirror-lines { margin-left:3px; margin-right:3px; }/*editable code holder*/
+
+div.CodeMirror span.CodeMirror-matchingbracket { color: #7EFC7E; }/*65FC65*/
+
+.cm-s-twilight .CodeMirror-gutter { background: none; border-right:1px solid #222; padding-right:3px; min-width:2.5em; }
+.cm-s-twilight .CodeMirror-gutter-text { color: #222; }
+
+.cm-s-twilight span.cm-keyword { color: #CDA869; }
+.cm-s-twilight span.cm-atom { color: #B35E4D; }
+.cm-s-twilight span.cm-number { color: #B35E4D; }
+.cm-s-twilight span.cm-def {color: white;}
+.cm-s-twilight span.cm-variable { color:white; }
+.cm-s-twilight span.cm-variable-2 { color: #CDA869; }
+.cm-s-twilight span.cm-variable-3 { color: white; }
+.cm-s-twilight span.cm-property {color: #92A75C;}
+.cm-s-twilight span.cm-operator {color: #CDA869;}
+.cm-s-twilight span.cm-comment { color: #5F5A60; }
+.cm-s-twilight span.cm-string { color: #8F9D6A; }
+.cm-s-twilight span.cm-string-2 {color: #8F9D6A;}
+.cm-s-twilight span.cm-meta { color: #738C73; }
+.cm-s-twilight span.cm-error { color: #9d1e15; }
+.cm-s-twilight span.cm-qualifier {color: #555;}
+.cm-s-twilight span.cm-builtin { color: #ff9e59; }
+.cm-s-twilight span.cm-bracket { color: #EBEFE7; }
+.cm-s-twilight span.cm-tag { color: #CDA869; }
+.cm-s-twilight span.cm-attribute {color: #9C8253;}
+.cm-s-twilight span.cm-header {color: #a0a;}
+.cm-s-twilight span.cm-quote {color: #090;}
+.cm-s-twilight span.cm-hr {color: #999;}
+.cm-s-twilight span.cm-link {color: #00c;}

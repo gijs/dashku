@@ -1,0 +1,11 @@
+.row#buildWidgetOptions
+  .span7.header
+    h3 Choose a template
+    a.btn.btn-primary.pull-right#goBack Back
+  .span7.content
+    {{#widgetTemplates}}
+    .widgetTemplate(data-id="{{_id}}")
+      .name {{name}}
+      .snapshot
+        img(src="{{snapshotUrl}}")
+    {{/widgetTemplates}}

@@ -1,0 +1,31 @@
+{
+  "name": "Dashku",
+  "description": "Realtime dashboards and widgets built with HTML, CSS, and JavaScript",
+  "version": "0.0.1",
+  "author": "Anephenix <paul@anephenix.com>",
+  "private": true,
+  "engines": { "node": ">= 0.6.0" },
+  "dependencies": {
+    "socketstream": "0.3.1",
+    "ss-coffee": "0.1.x",
+    "ss-jade": "0.1.x",
+    "ss-stylus": "0.1.x",
+    "ss-hogan": "0.1.x",
+    "bcrypt": "0.5.0",
+    "mongoose":"2.5.0",
+    "node-uuid":"latest",
+    "underscore":"latest",
+    "request":"latest",
+    "redis":"latest",
+    "connect":"= 2.0.3",
+    "connect-route":"latest",
+    "nodemailer": "latest",
+    "marked":"latest"
+  },
+  "devDependencies":{
+    "selenium-launcher":"latest",
+    "soda":"latest",
+    "cucumber":"latest",
+    "mocha":"latest"
+  }
+}

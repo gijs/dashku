@@ -1,0 +1,169 @@
+// Modals
+
+.modal-body h3
+  font-weight 200
+  margin-top 10px
+
+.modal-body #buildWidgetOptions .header h3
+  float left
+  margin-top 0px
+
+.modal-body #buildWidgetOptions .header .btn
+  padding-left 15px
+  padding-right 15px
+  round(15px)
+  margin-right 10px
+
+.modal-body #buildWidgetOptions .content
+  margin-top 10px
+
+.modal-body #buildWidgetOptions .content .widgetTemplate
+  padding 5px 10px 10px 10px
+  border solid 1px #bbb
+  border-radius 5px
+  text-align center
+  box-shadow inset 0px 0px 20px white
+  float left
+  width 80px
+  height 80px
+  margin 15px
+
+.modal-body #buildWidgetOptions .content .widgetTemplate .snapshot
+  margin-top 5px
+  width 80px
+  height 60px
+  background rgba(0,0,0,0.3)
+  border-radius 3px
+  box-shadow inset 0px 0px 20px rgba(0,0,0,0.5)
+  overflow hidden
+
+.modal-body #buildWidgetOptions .content .widgetTemplate:hover
+  vertical-gradient(#ccc, #eee)
+  cursor pointer
+
+.modal-body p
+  text-align center
+
+.modal-body .option
+  border solid 1px #bbb
+  border-radius 5px
+  text-align center
+  box-shadow inset 0px 0px 20px white
+
+.modal-body .option:hover
+  vertical-gradient(#ccc, #eee)
+  cursor pointer
+
+.modal-body .option img
+  position relative
+  height 120px
+  margin 10px 30px
+
+.modal-body .or
+  width 49px
+  text-align right
+  display inline-block
+  position static
+  margin-top 100px
+
+#overlay 
+  z-index 1032
+  position absolute
+  width 100%
+  height 100%
+  background rgba(0,0,0,0.3)
+  top 0px
+  left 0px
+  right 0px
+  bottom 0px
+
+// Dashboard widget
+
+.widget.editMode 
+  box-shadow 0px 0px 14px rgba(241,236,79, 0.5)
+
+.widget
+  box-shadow inset 0 3px 14px 1px rgba(0,0,0,0.45)
+  border-radius 10px
+  background rgba(0,0,0,0.5)
+  float left
+  width 200px
+  padding 10px
+  height 180px
+  margin 7px  
+  overflow hidden
+
+  .buttons
+    float right
+    opacity 0
+    width 23px
+    height 20px
+    z-index 2
+
+    .edit
+      cursor pointer
+      float left
+      width 10px
+      height 10px
+      background url('/images/cog.png')
+
+    .delete
+      cursor pointer
+      margin-left 3px
+      float left
+      background url('/images/delete2.png')
+      width 10px
+      height 10px
+
+  .header
+    font-weight bold
+    position relative
+    width 74%
+    margin-left 14%
+    text-align center
+    margin-top -3px
+    round(3px)
+    cursor text
+
+  .header:hover
+    background rgba(255,255,255,0.05)
+
+
+  .content
+    text-align center
+    position relative
+    width 100%
+    height 100%
+    overflow hidden
+    cursor move
+
+  a.newWidgetToBuild
+    position relative
+    padding-top 60px
+    font-size 1.1em
+    color white
+    text-decoration none
+    display block
+
+  a.newWidgetToBuild:hover
+    color #aaa
+
+.widget:hover .buttons
+  opacity 1
+
+.widget .ui-resizable-handle.ui-resizable-se
+  opacity 0
+  width 14px
+  height 14px
+  float right
+  margin-right -5px
+  margin-top -32px
+  background url('/images/resize.png')
+  background-repeat no-repeat
+  background-position center
+  cursor se-resize
+  z-index 3
+  padding 0px
+
+.widget:hover .ui-resizable-handle.ui-resizable-se
+  opacity 1

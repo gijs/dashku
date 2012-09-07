@@ -1,0 +1,88 @@
+.tooltip
+  z-index 1034
+
+#editor2, #cssEditor
+  width 680px
+  height 380px
+  position absolute
+  background rgba(0,0,0,0.95)
+  round(10px)
+  overflow hidden
+  border solid 1px black
+  padding 5px 10px
+  z-index 1033
+
+  .header
+    text-align center
+    font-weight bold
+    cursor move
+
+    a.close
+      position absolute
+      top 4px
+      right 7px
+      cursor pointer
+      color white
+  
+  .content
+    margin-top 15px
+
+    ul#tabs
+      text-align center
+
+      li.tab
+        padding 5px 10px
+        background #191919
+        display inline
+        border-right 1px solid black
+        color #aaa
+
+      li.tab:hover
+        background #232323
+        cursor pointer
+
+      li.tab.active
+        background #272727
+
+      li.tab:first-child
+        padding-left 15px
+        round-corner(top,left, 15px)
+        round-corner(bottom,left, 15px)
+
+      li.tab:last-child
+        padding-right 15px
+        round-corner(top,right, 15px)
+        round-corner(bottom,right, 15px)
+
+    ul#actions
+      position absolute
+      right 40px
+      top 36px
+
+      li.action
+        display inline
+        position relative
+        margin-right 5px
+        padding 3px 10px
+        round(14px)
+        width 10px
+        height 10px
+        cursor pointer
+
+      #load
+        vertical-gradient(#0482CA, #00A2FF)
+
+      #load:hover
+        vertical-gradient(#00A2FF, #0482CA)
+ 
+      #transmit
+        vertical-gradient(#FFB700, #FF7B00)
+
+      #transmit:hover
+        vertical-gradient(#FF7B00, #FFB700)
+
+      #download
+        vertical-gradient(#45991F, #61CF2E)
+
+      #download:hover
+        vertical-gradient(#61CF2E, #45991F)
